@@ -1,0 +1,196 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3 {
+	margin: 0 0 15px 0;
+}
+
+h4, h5, h6 {
+	margin: 0 0 10px 0;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 26px;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 22px;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.quark-screen {
+	display: flex;
+	flex-direction: column;
+}
+
+.quark-container {
+	display: flex;
+	flex-direction: row;
+	/*flex: 1;*/
+}
+
+.quark-container.block {
+	display: block;
+}
+
+.quark-container.form-group {
+
+}
+
+.quark-container.form-group-title {
+	font-size: 20px;
+	line-height: 22px;
+}
+
+.quark-container.form-group-description {
+	font-size: 12px;
+	line-height: 14px;
+	margin: 5px 0 15px 0;
+}
+
+.quark-column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.quark-column.form {
+	margin: 30px 0;
+	gap: 10px;
+}
+
+.quark-column.form .quark-column.form {
+	margin: 0 0 10px 0;
+}
+
+.quark-button {
+	padding: 15px 30px;
+	background: rgb(150,200,100);
+	color: rgb(255,255,255);
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+.quark-button:hover {
+	background: rgb(150,210,100);
+}
+
+.quark-link {
+	color: rgb(150,200,100);
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.quark-link:hover {
+	color: rgb(150,210,100);
+}
+
+.quark-box {
+	background: rgb(255,255,255);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	padding: 15px;
+}
+
+.quark-input {
+	background: rgb(255,255,255);
+	padding: 10px 15px;
+	border:1px solid rgb(230,230,230);
+	outline: none;
+	margin: 0;
+}
+
+label.quark-input {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+label.quark-input.trigger {
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 10px;
+	cursor: pointer;
+}
+
+label.quark-input.trigger:hover {
+}
+
+label.quark-input .quark-input {
+	padding: 0;
+	border: none;
+}
+
+label.quark-input span {
+	font-size: 10px;
+	line-height: 12px;
+	color: rgb(50,50,50);
+}
+
+label.quark-input input,
+label.quark-input select,
+label.quark-input textarea {
+	border: none;
+	outline: none;
+}
+
+label.quark-input textarea {
+	resize: vertical;
+	min-height: 40px;
+}
+
+
+
+#app-header {
+	background: rgb(55,55,55);
+	color: rgb(255,255,255);
+}
+
+#app-header-logo {
+	font-size: 22px;
+	line-height: 24px;
+	padding: 15px;
+}
+
+#app-header-logo span {
+	font-size: 12px;
+	line-height: 14px;
+}
+
+#app-main {
+	flex-wrap: nowrap;
+	flex: 1;
+	overflow: auto;
+}
+
+#app-main > .quark-container {
+	height: 100%;
+	flex: none;
+}
+
+#app-footer {
+
+}

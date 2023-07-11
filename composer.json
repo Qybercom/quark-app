@@ -1,0 +1,16 @@
+{
+	"name": "qybercom/quark-app",
+	"description": "A project template for PHP projects based on Quark framework",
+	"license": "LGPL-3.0-only",
+	"require": {
+		"qybercom/quark": "dev-master"
+	},
+	"type": "template",
+	"keywords": ["template", "quark"],
+	"homepage": "https://github.com/Qybercom/quark-app",
+	"scripts": {
+		"post-create-project-cmd": [
+			"php -r \"rename('.gitignore-example', '.gitignore'); rename('composer-example.json', 'composer.json');\""
+		]
+	}
+}
